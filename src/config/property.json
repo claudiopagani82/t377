@@ -105,11 +105,11 @@
     "sectionNumber": "2.",
     "sectionTitle": "LA QUALITÀ DELL'IMMOBILE",
     "sourceDocument": "docs/descrizione-immobile.pdf",
-    "generatedAt": "2026-08-09T11:30:33.581Z",
+    "generatedAt": "2026-08-09T22:18:15.614Z",
     "voci": [
       {
         "label": "Anno costruzione",
-        "text": "L'immobile risale agli Anni 70."
+        "text": "Anni 70."
       },
       {
         "label": "Ristrutturazioni",
@@ -117,7 +117,7 @@
       },
       {
         "label": "Serramenti",
-        "text": "Ingresso con porta blindata. Gli infissi sono in legno con vetri doppi e tapparelle in plastica."
+        "text": "Porta blindata all'ingresso. Infissi in legno con vetri doppi e tapparelle in plastica."
       },
       {
         "label": "Tetto",
@@ -129,7 +129,7 @@
       },
       {
         "label": "Riscaldamento",
-        "text": "Impianto centralizzato con contabilizzatore, dotato di termovalvole."
+        "text": "Impianto centralizzato con contabilizzatore e termovalvole."
       },
       {
         "label": "Climatizzazione",
@@ -137,15 +137,15 @@
       },
       {
         "label": "Materiali",
-        "text": "Pavimentazione in cotto. La facciata del fabbricato è rifinita con intonaco esterno."
+        "text": "Pavimentazione in cotto. Struttura del fabbricato con finitura a intonaco esterno."
       },
       {
         "label": "Impianti",
-        "text": "È presente un impianto di allarme perimetrale, oltre a fibra ottica e parabola TV. L'immobile è allacciato alla fogna e dispone di certificazione energetica."
+        "text": "Impianto di allarme perimetrale, fibra ottica e parabola TV. L'immobile è allacciato alla fogna e dispone di certificazione energetica."
       },
       {
         "label": "Tutti i plus",
-        "text": "Le finestre sono dotate di zanzariere. Nella vendita sono compresi l'arredo della cucina e quello del bagno."
+        "text": "Zanzariere alle finestre. L'appartamento è dotato di balcone e box singolo, con ascensore in condominio e agibilità presente."
       }
     ]
   },
