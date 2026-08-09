@@ -263,23 +263,43 @@
     "features": [
       {
         "label": "Tipologia",
-        "text": "trilocale disposto su un unico livello, situato al secondo piano di una palazzina di 4 piani fuori terra dotata di ascensore."
+        "text": "Appartamento al piano rialzato in contesto servito da ascensore, unico sul pianerottolo. Superficie commerciale indicata in 94 mq nel testo dell'annuncio e in 93 mq nella scheda tecnica."
       },
       {
-        "label": "Appartamento",
-        "text": "superficie coperta di 95.5 m²."
+        "label": "Posizione",
+        "text": "In Via Carlo De Simoni 19, nel centro di Tradate, alle spalle del Comune e della piazza principale. A pochi passi scuole, supermercato, negozi, bar e stazione ferroviaria."
       },
       {
-        "label": "Area Esterna",
-        "text": "terrazzo (o balcone) di 7.2 m²."
+        "label": "Interni",
+        "text": "Soggiorno di 24 mq, cucina abitabile separata di 11,60 mq, camera matrimoniale di 15,20 mq, seconda stanza di 9 mq utilizzabile come studio o camera ospiti, bagno finestrato di 5,10 mq e ripostiglio di 2,80 mq. Soffitti alti 2,95 metri e pavimentazione in cotto in gran parte dell'abitazione."
+      },
+      {
+        "label": "Area esterna",
+        "text": "Balcone di 9 mq accessibile dal soggiorno."
       },
       {
         "label": "Autorimessa",
-        "text": "Include un box auto singolo di 19 m² situato al piano interrato."
+        "text": "Box singolo al piano interrato."
       },
       {
-        "text": "La vendita comprende l'arredamento della cucina e del bagno",
-        "label": "Arredi inclusi"
+        "label": "Stato dell'immobile",
+        "text": "Stato buono; edificio dell'anno 1970. Classe energetica E (239,95 kWh/mqa)."
+      },
+      {
+        "label": "Arredi inclusi",
+        "text": "Immobile semi arredato: l'arredo della cucina è compreso nel prezzo e il bagno viene venduto completo di arredo."
+      },
+      {
+        "label": "Impianti e infissi",
+        "text": "Porta blindata, serramenti in legno con doppi vetri e zanzariere. Riscaldamento centralizzato con contabilizzatori e termovalvole."
+      },
+      {
+        "label": "Altre dotazioni",
+        "text": "Impianto di allarme perimetrale, predisposizione per fibra ottica e parabola TV."
+      },
+      {
+        "label": "Prezzo",
+        "text": "€ 165.000."
       }
     ],
     "condominioTitle": "Informazioni Condominiali",
