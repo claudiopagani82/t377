@@ -4,7 +4,7 @@
   "title": "IL METODO OPENDOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
   "description": "L'Open Domus® non è stato creato per vendere una casa più velocemente.\nÈ stato creato per permettere a ogni persona di acquistarla con maggiore consapevolezza, trasparenza e serenità.",
-  "address": "Via Cavour, 37 / Centro Tradate",
+  "address": "Via Carlo de Simoni, 19, Tradate",
   "agencyName": "DomusTua Immobiliare",
   "agencyPhone": "+39 0331 844898",
   "agencyEmail": "info@domustua.com",
@@ -159,34 +159,16 @@
       "/images/come-raggiungerci-1-image1.png",
       "/images/come-raggiungerci-1-image2.jpg"
     ],
-    "mapImage": "/images/dove-parcheggiare-map-1786270339400.png",
-    "generatedAt": "2026-08-09T10:12:20.214Z",
-    "lat": 45.7115556,
-    "lng": 8.907163299999999,
+    "mapImage": "/images/dove-parcheggiare-map-1786313858503.png",
+    "generatedAt": "2026-08-09T22:17:39.278Z",
+    "lat": 45.7140839,
+    "lng": 8.9059183,
     "parcheggi": [
       {
         "markerNumber": 1,
         "label": "Parcheggio",
-        "distanceText": "0,6 km",
-        "durationText": "8 min"
-      },
-      {
-        "markerNumber": 2,
-        "label": "Parcheggio pubblico",
-        "distanceText": "1,3 km",
-        "durationText": "18 min"
-      },
-      {
-        "markerNumber": 3,
-        "label": "Parcheggio Ospedale di Tradate",
-        "distanceText": "1,5 km",
-        "durationText": "21 min"
-      },
-      {
-        "markerNumber": 4,
-        "label": "Parcheggio parco pineta",
-        "distanceText": "2,0 km",
-        "durationText": "27 min"
+        "distanceText": "0,9 km",
+        "durationText": "12 min"
       }
     ],
     "mapImageSatellite": null,
@@ -198,39 +180,39 @@
     "enabled": true,
     "heading": "Dove siamo",
     "showAddress": true,
-    "address": "Via Cavour, 37 / Centro Tradate",
-    "mapImage": "/images/dove-siamo-map-1785849011265.png",
-    "generatedAt": "2026-08-04T13:10:12.288Z",
-    "lat": 45.7115556,
-    "lng": 8.907163299999999,
+    "address": "Via Carlo de Simoni, 19, Tradate",
+    "mapImage": "/images/dove-siamo-map-1786313856860.png",
+    "generatedAt": "2026-08-09T22:17:37.617Z",
+    "lat": 45.7140839,
+    "lng": 8.9059183,
     "servizi": [
       {
         "markerNumber": 1,
         "category": "scuola",
-        "label": "EUROUFFICIO TRADATE Varese",
-        "distanceText": "29 m",
-        "durationText": "1 min"
+        "label": "Nurseries Carlo Saporiti",
+        "distanceText": "0,2 km",
+        "durationText": "3 min"
       },
       {
         "markerNumber": 2,
         "category": "scuola",
-        "label": "Scuole Pubbliche Medie Superiori Istituto Professionale Di Stato Per L'Industria E L'Artigianato",
-        "distanceText": "0,1 km",
-        "durationText": "1 min"
+        "label": "Closlieu - Il gioco del dipingere",
+        "distanceText": "0,2 km",
+        "durationText": "3 min"
       },
       {
         "markerNumber": 3,
         "category": "supermercato",
-        "label": "Carrefour Express - Supermarket",
-        "distanceText": "17 m",
-        "durationText": "1 min"
+        "label": "Drogheria Aimetti",
+        "distanceText": "0,2 km",
+        "durationText": "2 min"
       },
       {
         "markerNumber": 4,
         "category": "supermercato",
         "label": "Antica Macelleria del Corso",
-        "distanceText": "0,4 km",
-        "durationText": "6 min"
+        "distanceText": "0,2 km",
+        "durationText": "3 min"
       },
       {
         "markerNumber": 5,
@@ -243,20 +225,20 @@
         "markerNumber": 6,
         "category": "farmacia",
         "label": "Farmacia Carrari di Carrari dr. Marco",
-        "distanceText": "0,8 km",
-        "durationText": "10 min"
+        "distanceText": "0,6 km",
+        "durationText": "8 min"
       },
       {
         "markerNumber": 7,
         "category": "parcheggio",
         "label": "Parcheggio",
-        "distanceText": "0,6 km",
-        "durationText": "8 min"
+        "distanceText": "0,9 km",
+        "durationText": "12 min"
       },
       {
         "markerNumber": 8,
         "category": "parcheggio",
-        "label": "Parcheggio pubblico",
+        "label": "Parcheggio Ospedale di Tradate",
         "distanceText": "1,3 km",
         "durationText": "18 min"
       },
@@ -264,8 +246,8 @@
         "markerNumber": 9,
         "category": "stazione",
         "label": "Tradate",
-        "distanceText": "0,2 km",
-        "durationText": "2 min"
+        "distanceText": "0,5 km",
+        "durationText": "7 min"
       }
     ]
   },
