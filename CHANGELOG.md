@@ -4,6 +4,12 @@ Registro delle modifiche a questo template, una voce per ogni valore del campo `
 
 Il changelog parte da questa versione in avanti: le versioni precedenti non sono documentate qui.
 
+## [1.24] - 2026-08-10
+### Modificato
+- La sezione 3 si chiama ora **"📐 3. Gli Spazi"** invece di "Planimetrie e Catasto", e la sua pagina passa da `/planimetrie` a **`/gli-spazi`**. Le tre voci — planimetrie quotate, planimetrie catastali, visure catastali — restano quelle, con i documenti già caricati.
+- La relazione tecnica resta il secondo blocco della pagina, sotto le planimetrie.
+- La chiave `planimetrieCatasto` non cambia nome: cambiano il titolo mostrato e l'indirizzo della pagina, non dove si modificano i contenuti.
+
 ## [1.23] - 2026-08-10
 ### Corretto
 - **Un sito aggiornato da una versione anteriore alla 1.8 non compilava più, e il deploy falliva.** Le sezioni documentali di quei siti hanno `items` come elenco di stringhe, e la funzione "Aggiorna" del pannello aggiunge le chiavi nuove senza riscrivere quelle vecchie: la pagina 4 riceveva quindi voci in due forme diverse e il controllo dei tipi si fermava (`Type 'string' is not assignable to type 'VoceDocumento'`). Il sito restava pubblicato all'ultima versione buona, ma ogni nuovo deploy falliva.

@@ -1,5 +1,5 @@
 {
-  "version": "1.23",
+  "version": "1.24",
   "disabled": false,
   "title": "IL METODO OPENDOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
@@ -35,11 +35,6 @@
       "enabled": true
     },
     {
-      "title": "🗺️ 3. Planimetrie e Catasto",
-      "href": "/planimetrie",
-      "enabled": true
-    },
-    {
       "title": "📄 4. La Documentazione",
       "href": "/la-documentazione",
       "enabled": true
@@ -72,6 +67,11 @@
     {
       "title": "Per te, VENDITORE",
       "href": "/per-te-venditore",
+      "enabled": true
+    },
+    {
+      "title": "📐 3. Gli Spazi",
+      "href": "/gli-spazi",
       "enabled": true
     }
   ],
@@ -536,7 +536,8 @@
         "label": "🏡 Vuoi vendere casa? Scopri come funziona",
         "url": "https://www.domustua.com/",
         "enabled": true,
-        "image": "/images/link-utili-sell.jpg"
+        "image": "/images/link-utili-sell.jpg",
+        "badge": "Segui su Instagram"
       },
       {
         "type": "instagram",
@@ -628,7 +629,8 @@
         "label": "🏡 Vuoi vendere casa? Scopri come funziona",
         "url": "https://www.domustua.com/",
         "enabled": true,
-        "image": "/images/link-utili-sell.jpg"
+        "image": "/images/link-utili-sell.jpg",
+        "badge": "Segui su Instagram"
       },
       {
         "type": "instagram",

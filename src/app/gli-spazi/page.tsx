@@ -5,7 +5,7 @@ import property from '@/config/property.json'
 const p = property.planimetrieCatasto
 const rel = property.relazioneTecnica
 
-// La pagina 3 accosta due blocchi: le planimetrie e i dati catastali, e la
+// "Gli Spazi" accosta due blocchi: le planimetrie con le visure catastali, e la
 // relazione tecnica. Parlano della stessa cosa — cosa risulta dell'immobile
 // sulla carta — e su due voci di menu affiancate sembravano due argomenti.
 // Ciascun blocco resta governato dal proprio interruttore, come le due metà
@@ -16,7 +16,7 @@ const mostraRelazione = rel.enabled
 // Le singole voci senza file allegato non compaiono — è la regola di tutte le
 // pagine documentali — ma il blocco sì, finché è acceso: è quello che dà il
 // titolo alla pagina. Nasconderlo quando non c'è ancora nulla da scaricare
-// faceva aprire "Planimetrie e Catasto" sull'intestazione "Relazione tecnica",
+// faceva aprire "Gli Spazi" sull'intestazione "Relazione tecnica",
 // come se la voce di menu portasse altrove.
 const planimetrieVuote = documentiDisponibili(vociDocumento(p.items)).length === 0
 
@@ -38,7 +38,7 @@ function Paragrafi({ testo }: { testo: string }) {
   )
 }
 
-export default function PlanimetrieCatastoPage() {
+export default function GliSpaziPage() {
   return (
     <PhotoLayout>
       <div className="w-full space-y-6">
