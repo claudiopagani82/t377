@@ -1,5 +1,5 @@
 {
-  "version": "1.27",
+  "version": "1.36",
   "disabled": false,
   "title": "IL METODO OPENDOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
@@ -45,9 +45,9 @@
       "enabled": true
     },
     {
-      "title": "Introduzione",
-      "href": "/introduzione",
-      "enabled": false
+      "title": "✍️ 7. Come Acquistarla",
+      "href": "/come-acquistarla",
+      "enabled": true
     },
     {
       "title": "Cos'è e come funziona l'Open Domus",
@@ -55,9 +55,24 @@
       "enabled": true
     },
     {
-      "title": "Bozza proposta",
-      "href": "/bozza-proposta",
+      "title": "⭐ 9. Le Esperienze dei Nostri Acquirenti",
+      "href": "/esperienze-acquirenti",
       "enabled": true
+    },
+    {
+      "title": "🔁 9B. Per comprare devi vendere la tua casa?",
+      "href": "/devi-vendere",
+      "enabled": true
+    },
+    {
+      "title": "❤️ 10. Il Mondo Domus Tua",
+      "href": "/mondo-domus-tua",
+      "enabled": true
+    },
+    {
+      "title": "Introduzione",
+      "href": "/introduzione",
+      "enabled": false
     },
     {
       "title": "Link utili",
@@ -266,7 +281,9 @@
   "openDomus": {
     "enabled": true,
     "heading": "COS'È E COME FUNZIONA L'OPEN DOMUS",
-    "images": []
+    "images": [],
+    "sectionNumber": "8.",
+    "videoUrl": ""
   },
   "caratteristichePrincipali": {
     "enabled": true,
@@ -805,6 +822,133 @@
       {
         "label": "Prezzo acquisto seconda casa",
         "text": "",
+        "documentUrl": null
+      }
+    ]
+  },
+  "annuncio": {
+    "adId": "",
+    "url": "",
+    "prezzo": null,
+    "prezzoTesto": "",
+    "aggiornatoIl": null
+  },
+  "esperienzeAcquirenti": {
+    "enabled": true,
+    "sectionNumber": "9.",
+    "sectionTitle": "LE ESPERIENZE DEI NOSTRI ACQUIRENTI",
+    "videoHeading": "Le loro parole",
+    "videos": [
+      {
+        "label": "Videointervista",
+        "url": ""
+      }
+    ],
+    "recensioniHeading": "Le recensioni",
+    "googlePlaceId": "",
+    "recensioniFonte": "manuale",
+    "recensioniAggiornateIl": null,
+    "recensioniBadge": "",
+    "recensioni": [
+      {
+        "name": "",
+        "rating": 5,
+        "text": "",
+        "data": "",
+        "url": ""
+      }
+    ]
+  },
+  "deviVendere": {
+    "enabled": true,
+    "sectionNumber": "9B.",
+    "sectionTitle": "PER COMPRARE DEVI VENDERE LA TUA CASA?",
+    "text": "Molti dei nostri acquirenti hanno una casa da vendere prima di comprare. È una cosa che sappiamo gestire: possiamo valutare il tuo immobile e dirti in quanto tempo, realisticamente, si vende.",
+    "videoUrl": "",
+    "ctaLabel": "Chiedi la tua valutazione",
+    "ctaUrl": ""
+  },
+  "mondoDomusTua": {
+    "enabled": true,
+    "sectionNumber": "10.",
+    "sectionTitle": "IL MONDO DOMUS TUA",
+    "claim": "L'agenzia immobiliare indipendente più recensita della provincia",
+    "numeri": [
+      {
+        "valore": "6.433",
+        "etichetta": "persone felici"
+      },
+      {
+        "valore": "1.523",
+        "etichetta": "transazioni"
+      },
+      {
+        "valore": "92%",
+        "etichetta": "di immobili venduti"
+      },
+      {
+        "valore": "269.395",
+        "etichetta": "mq valutati"
+      }
+    ],
+    "premi": [
+      {
+        "titolo": "Top Agency d'Italia",
+        "anno": "2025"
+      },
+      {
+        "titolo": "Top Agency d'Italia",
+        "anno": "2024"
+      }
+    ],
+    "recensioniUrl": "",
+    "youtubeCanale": "https://www.youtube.com/@DOMUSTUASRLIMMOBILIARE",
+    "youtubePlaylist": "https://www.youtube.com/playlist?list=PLPCjl_WhESf95lAgOUkWgImiNehWJZvty",
+    "sitoUrl": "https://www.domustua.com",
+    "social": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/domustuaimmobiliare_tradate"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/domustuaimmobiliaretradate"
+      },
+      {
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@domustuaimmobiliare"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/@DOMUSTUASRLIMMOBILIARE"
+      }
+    ],
+    "indirizzo": "Corso Bernacchi, 91 – 21049 Tradate (VA)"
+  },
+  "comeAcquistarla": {
+    "enabled": true,
+    "sectionNumber": "7.",
+    "sectionTitle": "COME ACQUISTARLA",
+    "items": [
+      {
+        "label": "Procedura (manifestazione di interesse)",
+        "enabled": true,
+        "text": "",
+        "videoUrl": "",
+        "documentUrl": null
+      },
+      {
+        "label": "Bozza proposta",
+        "enabled": true,
+        "text": "",
+        "videoUrl": "",
+        "documentUrl": null
+      },
+      {
+        "label": "Caparra o bonifico bancario",
+        "enabled": true,
+        "text": "",
+        "videoUrl": "",
         "documentUrl": null
       }
     ]

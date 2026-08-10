@@ -47,3 +47,20 @@ export async function getLatestYoutubeVideo(channelId: string): Promise<LatestYo
     return null
   }
 }
+
+/**
+ * L'identificativo del video da un qualunque indirizzo YouTube.
+ *
+ * Chi copia il link dalla barra del browser ottiene `watch?v=`, chi usa il
+ * pulsante "Condividi" ottiene `youtu.be/`, e i video verticali sono `shorts/`:
+ * accettarne uno solo vorrebbe dire un riquadro vuoto per gli altri due, senza
+ * che nel pannello si capisca perché.
+ */
+export function parseYoutubeId(url: string): string | null {
+  const pulito = url.trim()
+  if (!pulito) return null
+  const m = pulito.match(
+    /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/
+  )
+  return m?.[1] ?? null
+}

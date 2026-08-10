@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { PhotoLayout } from '@/components/PhotoLayout'
+import { VideoYoutube } from '@/components/VideoYoutube'
 import property from '@/config/property.json'
 
 const p = property.openDomus
@@ -16,9 +17,10 @@ function Bullet({ children }: { children: React.ReactNode }) {
 export default function OpenDomusPage() {
   return (
     <PhotoLayout>
-      <h2 className="text-[#CC1414] font-bold uppercase text-lg text-center tracking-wide mb-3">
+      <h1 className="text-[#CC1414] font-bold uppercase text-lg text-center tracking-wide mb-3">
+        {p.sectionNumber && <span className="mr-1">{p.sectionNumber}</span>}
         {p.heading}
-      </h2>
+      </h1>
 
       <p className="text-[#333333] text-sm text-center mb-6 px-2">
         Open Domus non è una semplice visita, ma <em>un modo organizzato, trasparente e corretto</em> per acquistare casa.
@@ -75,6 +77,12 @@ export default function OpenDomusPage() {
             <Bullet>L&apos;immobile resterà in vendita <strong>fino</strong> all&apos;accettazione formale di una proposta.</Bullet>
           </ul>
         </div>
+
+        {p.videoUrl?.trim() && (
+          <div className="border-t border-[#e4e4e7] pt-5">
+            <VideoYoutube url={p.videoUrl} title={p.heading} />
+          </div>
+        )}
       </div>
     </PhotoLayout>
   )

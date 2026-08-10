@@ -4,6 +4,68 @@ Registro delle modifiche a questo template, una voce per ogni valore del campo `
 
 Il changelog parte da questa versione in avanti: le versioni precedenti non sono documentate qui.
 
+## [1.36] - 2026-08-10
+### Aggiunto
+- Nella sezione 10 compaiono i premi dell'agenzia: **Top Agency d'Italia, 2024 e 2025**.
+- Uno stesso premio vinto più volte è una riga sola con gli anni accanto ("Top Agency d'Italia — 2024 e 2025"): due righe identiche tranne l'anno direbbero meno di quel che vale averlo vinto due volte di fila.
+
+## [1.35] - 2026-08-10
+### Aggiunto
+- Nuova sezione **"❤️ 10. Il Mondo Domus Tua"**, pagina `/mondo-domus-tua`: chi siamo, i valori, il manifesto, i numeri, i premi, le recensioni, il canale YouTube, il sito e i social, tutto in una pagina invece del solo collegamento al sito dell'agenzia.
+- I contenuti vengono dal sito ufficiale: la frase "we love home, we love life" e il senso di "chi siamo", i tre valori (professionalità, innovazione, integrità) con il protocollo Domus D.O.C., il manifesto, e i **numeri reali letti dai contatori della home** — 6.433 persone felici, 1.523 transazioni, 92% di immobili venduti, 269.395 mq valutati.
+- Chi siamo, valori e manifesto sono **testi fissi nel modello**, come le regole dell'Open Domus: uguali per ogni immobile, si cambiano qui una volta per tutti. Dal pannello si aggiornano invece i numeri, i premi e i collegamenti, che cambiano nel tempo.
+- I premi partono da un elenco vuoto: sul sito dell'agenzia non c'è una pagina che li elenchi, quindi vanno aggiunti a mano. Finché è vuoto, il blocco non compare.
+
+## [1.34] - 2026-08-10
+### Aggiunto
+- Nuova sezione **"🔁 9B. Per comprare devi vendere la tua casa?"**, pagina `/devi-vendere`: un testo, un video e un pulsante che porta alla valutazione. È l'ostacolo più frequente fra l'interesse e la proposta, e la pagina lo dice apertamente invece di lasciarlo come dubbio non detto.
+- Il pulsante compare solo se ha sia il testo sia il link: può portare alla pagina di valutazione dell'agenzia, a un modulo o a una chat WhatsApp.
+- L'ordinamento del menu accetta ora i numeri con lettera (`9B.`), che altrimenti finivano in fondo con le voci non numerate.
+
+## [1.33] - 2026-08-10
+### Aggiunto
+- Le recensioni della sezione 9 possono ora venire **dalla scheda Google dell'agenzia**, caricate dal pannello. Nuovi campi `googlePlaceId`, `recensioniFonte`, `recensioniAggiornateIl`, e `data` e `url` in ogni recensione.
+- Ogni recensione mostra la data e il collegamento "Leggila su Google", e sotto l'elenco compare l'attribuzione richiesta dai termini d'uso delle Places API. Le recensioni scritte a mano restano possibili: quei campi restano vuoti e l'attribuzione non compare.
+
+### Note
+- **Google restituisce al massimo cinque recensioni**, quelle che considera più rilevanti: non c'è modo, via API, di averle tutte. Media e numero complessivo però ci sono, e finiscono nel riepilogo sopra l'elenco, altrimenti chi legge crede che l'agenzia abbia cinque recensioni in tutto.
+
+## [1.32] - 2026-08-10
+### Aggiunto
+- Nuova sezione **"⭐ 9. Le Esperienze dei Nostri Acquirenti"**, pagina `/esperienze-acquirenti`, con due blocchi: i **video** di chi ha già comprato (quanti se ne vogliono, ciascuno con la sua didascalia) e le **recensioni** scritte, con nome, stelle e testo, sopra un riepilogo facoltativo tipo "+500 recensioni · ★4,9 su Google".
+- Un video senza link e una recensione senza testo non compaiono: si possono lasciare vuoti finché non si hanno. Se non c'è né l'uno né l'altro, la pagina lo dichiara invece di mostrare una sezione "esperienze" vuota, che direbbe l'opposto di quel che vuole dire.
+- Nuova chiave `esperienzeAcquirenti`.
+
+## [1.31] - 2026-08-10
+### Aggiunto
+- Nella sezione **7. Come Acquistarla** ogni passo può ora essere spiegato in tre modi, tutti facoltativi: un **testo**, un **video di YouTube** e il documento da scaricare. Nuovi campi `text` e `videoUrl` in ogni voce di `comeAcquistarla.items`.
+- In fondo alla sezione **8. Il Metodo Open Domus®** compare un **video** (`openDomus.videoUrl`). Nel pannello il campo è bloccato dietro una spunta, come telefono ed email: il video del metodo è lo stesso per tutti gli immobili e non va cambiato sito per sito.
+- Nuovo componente `VideoYoutube` e funzione `parseYoutubeId`: accettano l'indirizzo copiato dalla barra del browser, quello del pulsante "Condividi" (`youtu.be`) e gli Shorts. Un indirizzo non riconosciuto non produce nulla, invece di un riquadro con l'errore di YouTube dentro.
+- I video usano `youtube-nocookie.com`: stesso video, nessun cookie di profilazione finché il visitatore non preme play. **Nota privacy:** se un domani arriverà un banner di consenso, questi riquadri vanno tra quelli da bloccare.
+
+## [1.30] - 2026-08-10
+### Modificato
+- La pagina dell'Open Domus diventa **"🤝 8. Il Metodo Open Domus®"**: nuovo titolo nel menu e in cima alla pagina, con il numero di sezione come gli altri capitoli. La rotta resta `/open-domus` e il testo della pagina non cambia.
+- Nuovo campo `openDomus.sectionNumber`.
+
+## [1.29] - 2026-08-10
+### Aggiunto
+- Nuova sezione **"✍️ 7. Come Acquistarla"**, pagina `/come-acquistarla`, con i tre passi dell'acquisto: **procedura (manifestazione di interesse)**, **bozza proposta**, **caparra o bonifico bancario**. Ciascuno è un documento da scaricare, e una voce senza file allegato non compare.
+
+### Modificato
+- **"Bozza proposta di acquisto" confluisce nella nuova sezione** e passa da fotografie a documenti scaricabili: erano immagini della bozza cartacea, ma è un modulo da leggere e compilare, non da guardare.
+
+### Rimosso
+- La pagina `/bozza-proposta`, la chiave `bozzaProposta` e le cinque immagini `public/images/bozza-proposta-image*.jpg`.
+
+## [1.28] - 2026-08-10
+### Modificato
+- La sezione **"6. Quanto Costa"** si riduce all'osso: due sezioni, "prezzo acquisto prima casa" e "prezzo acquisto seconda casa", ciascuna con il solo prospetto da caricare dal pannello. Il campo per l'importo scritto a mano non c'è più. Finché il prospetto manca, la sezione compare comunque e dichiara che non è ancora disponibile.
+
+### Aggiunto
+- Nuova chiave `annuncio` (`adId`, `url`, `prezzo`, `prezzoTesto`, `aggiornatoIl`): **il prezzo dell'annuncio ufficiale viene conservato nel sito**, riletto a ogni rigenerazione delle caratteristiche o della galleria. Nessuna pagina lo usa ancora — è la base per i conti della sezione 6.
+- `prezzo` è il numero in euro, `prezzoTesto` la scritta originale. Un annuncio in "trattativa riservata" lascia `prezzo` a `null` invece di uno zero, che sarebbe stato peggio di un'assenza dichiarata.
+
 ## [1.27] - 2026-08-10
 ### Modificato
 - **Il menu hamburger è riordinato**: prima "Benvenuto", poi i capitoli numerati dall'1 al 6 in ordine, poi le voci non ancora numerate (Introduzione, Open Domus, Bozza proposta, Link utili, Link utili 2, Per te VENDITORE). I capitoli erano finiti sparsi, nell'ordine in cui erano nati: la 6 prima della 5, la 3 in fondo dopo "Per te, VENDITORE".
