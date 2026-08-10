@@ -4,6 +4,23 @@ Registro delle modifiche a questo template, una voce per ogni valore del campo `
 
 Il changelog parte da questa versione in avanti: le versioni precedenti non sono documentate qui.
 
+## [1.27] - 2026-08-10
+### Modificato
+- **Il menu hamburger è riordinato**: prima "Benvenuto", poi i capitoli numerati dall'1 al 6 in ordine, poi le voci non ancora numerate (Introduzione, Open Domus, Bozza proposta, Link utili, Link utili 2, Per te VENDITORE). I capitoli erano finiti sparsi, nell'ordine in cui erano nati: la 6 prima della 5, la 3 in fondo dopo "Per te, VENDITORE".
+
+## [1.26] - 2026-08-10
+### Modificato
+- **"Prospetto costi" diventa "💶 6. Quanto Costa"**, pagina `/quanto-costa`, con due sole voci: **prezzo acquisto prima casa** e **prezzo acquisto seconda casa**. Prima e seconda casa hanno imposte diverse, e un prezzo solo non poteva dirlo.
+- Ogni voce ha un importo (o una descrizione libera) e un prospetto dettagliato allegabile. Una voce senza né l'uno né l'altro non compare in pagina.
+
+### Rimosso
+- La chiave `prospettoCosti`, con il suo elenco di voci e l'immagine del prospetto, e la pagina `/prospetto-costi`. Sostituita da `quantoCosta`: i contenuti vecchi non vengono travasati, perché le voci non corrispondono.
+
+## [1.25] - 2026-08-10
+### Modificato
+- **"Scopri la Casa" perde lo sfondo bianco** e passa a `PhotoLayout` come le sezioni 2, 3, 4 e 5: la foto dell'immobile sotto un velo bianco, il titolo della pagina in alto e i due blocchi — parcheggi e dintorni — dentro riquadri chiari. Era l'ultima pagina rimasta bianca.
+- Le righe dei servizi nei dintorni perdono il fondo bianco, che dentro il riquadro chiaro sarebbe sparito: le separa il solo bordo.
+
 ## [1.24] - 2026-08-10
 ### Modificato
 - La sezione 3 si chiama ora **"📐 3. Gli Spazi"** invece di "Planimetrie e Catasto", e la sua pagina passa da `/planimetrie` a **`/gli-spazi`**. Le tre voci — planimetrie quotate, planimetrie catastali, visure catastali — restano quelle, con i documenti già caricati.

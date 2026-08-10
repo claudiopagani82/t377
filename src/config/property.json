@@ -1,5 +1,5 @@
 {
-  "version": "1.24",
+  "version": "1.27",
   "disabled": false,
   "title": "IL METODO OPENDOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
@@ -15,11 +15,6 @@
       "enabled": true
     },
     {
-      "title": "Introduzione",
-      "href": "/introduzione",
-      "enabled": false
-    },
-    {
       "title": "🏡 1. Scopri la Casa",
       "href": "/scopri-la-casa",
       "enabled": true
@@ -30,8 +25,8 @@
       "enabled": true
     },
     {
-      "title": "Cos'è e come funziona l'Open Domus",
-      "href": "/open-domus",
+      "title": "📐 3. Gli Spazi",
+      "href": "/gli-spazi",
       "enabled": true
     },
     {
@@ -40,18 +35,28 @@
       "enabled": true
     },
     {
-      "title": "Bozza proposta",
-      "href": "/bozza-proposta",
-      "enabled": true
-    },
-    {
-      "title": "Prospetto costi",
-      "href": "/prospetto-costi",
-      "enabled": true
-    },
-    {
       "title": "🎥 5. Vivi la Casa",
       "href": "/vivi-la-casa",
+      "enabled": true
+    },
+    {
+      "title": "💶 6. Quanto Costa",
+      "href": "/quanto-costa",
+      "enabled": true
+    },
+    {
+      "title": "Introduzione",
+      "href": "/introduzione",
+      "enabled": false
+    },
+    {
+      "title": "Cos'è e come funziona l'Open Domus",
+      "href": "/open-domus",
+      "enabled": true
+    },
+    {
+      "title": "Bozza proposta",
+      "href": "/bozza-proposta",
       "enabled": true
     },
     {
@@ -67,11 +72,6 @@
     {
       "title": "Per te, VENDITORE",
       "href": "/per-te-venditore",
-      "enabled": true
-    },
-    {
-      "title": "📐 3. Gli Spazi",
-      "href": "/gli-spazi",
       "enabled": true
     }
   ],
@@ -791,5 +791,22 @@
     "enabled": true,
     "sectionNumber": "4.",
     "sectionTitle": "LA DOCUMENTAZIONE"
+  },
+  "quantoCosta": {
+    "enabled": true,
+    "sectionNumber": "6.",
+    "sectionTitle": "QUANTO COSTA",
+    "voci": [
+      {
+        "label": "Prezzo acquisto prima casa",
+        "text": "",
+        "documentUrl": null
+      },
+      {
+        "label": "Prezzo acquisto seconda casa",
+        "text": "",
+        "documentUrl": null
+      }
+    ]
   }
 }
