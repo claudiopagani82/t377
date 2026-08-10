@@ -4,6 +4,18 @@ Registro delle modifiche a questo template, una voce per ogni valore del campo `
 
 Il changelog parte da questa versione in avanti: le versioni precedenti non sono documentate qui.
 
+## [1.37] - 2026-08-10
+### Aggiunto
+- **Scadenza automatica del minisito.** Nuovo campo `expiresAt`: alle 23:59:59 del giorno indicato, ora italiana, il sito smette di essere raggiungibile e mostra una pagina che rimanda ai contatti dell'agenzia. Il minisito è la brochure di un immobile in vendita: passata la finestra dell'Open Domus, lasciarlo online significa lasciare in giro un prezzo e delle foto che col tempo diventano sbagliati.
+- Nuovo `src/proxy.ts`: il controllo gira **a ogni richiesta**, non a build time. Le pagine del sito sono statiche e da sole non saprebbero mai che è passata la mezzanotte; così invece il sito si spegne all'ora giusta senza cron da far scattare e senza un nuovo deploy da attendere. Spostare la data avanti lo riaccende da subito.
+- Nuova pagina `/non-disponibile`, mostrata al posto di qualunque pagina del sito scaduto. È un *rewrite*, non un redirect: l'indirizzo che il visitatore ha ricevuto dall'agenzia resta quello, e non si trasforma in un link a una pagina d'errore.
+- Immagini e documenti continuano a essere serviti: si spengono le pagine, non i file.
+- Un `expiresAt` vuoto significa "nessuna scadenza": i siti creati prima di questa versione restano online finché non si spengono a mano.
+
+### Note tecniche
+- Il file si chiama `proxy.ts` e non `middleware.ts`: da Next 16 è questo il nome della convenzione, e quello vecchio avverte a ogni build.
+- Le esclusioni (`/_next/`, i file con estensione) sono nel codice e non in `config.matcher`: nella conversione del matcher da stringa a espressione regolare le sequenze di escape si perdono, `\.` diventa un punto qualunque e finiva per escludere quasi tutte le pagine. Il sito scaduto restava visibile tranne la home — verificato e corretto.
+
 ## [1.36] - 2026-08-10
 ### Aggiunto
 - Nella sezione 10 compaiono i premi dell'agenzia: **Top Agency d'Italia, 2024 e 2025**.
