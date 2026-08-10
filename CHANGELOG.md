@@ -4,6 +4,14 @@ Registro delle modifiche a questo template, una voce per ogni valore del campo `
 
 Il changelog parte da questa versione in avanti: le versioni precedenti non sono documentate qui.
 
+## [1.38] - 2026-08-10
+### Corretto
+- **I titoli rinominati nel modello non arrivavano ai siti già creati.** L'aggiornamento aggiunge le chiavi mancanti ma non tocca i valori esistenti — apposta, perché titoli e voci di menu si possono personalizzare — e così un sito aggiornato alla 1.37 mostrava ancora "Cos'è e come funziona l'Open Domus" al posto di "🤝 8. Il Metodo Open Domus®", e "Planimetrie e dati catastali" al posto di "Gli Spazi".
+- Il pannello riconosce ora le rinomine decise nel modello e le applica **solo se il sito ha ancora il vecchio nome esatto**: se il titolo è stato cambiato a mano resta com'è. Questa versione serve appunto a far ripartire l'aggiornamento sui siti già allineati alla 1.37.
+
+### Nota
+- Nessuna modifica al codice delle pagine: cambia solo il numero di versione, perché l'aggiornamento scatta dal confronto fra la versione del sito e quella del modello.
+
 ## [1.37] - 2026-08-10
 ### Aggiunto
 - **Scadenza automatica del minisito.** Nuovo campo `expiresAt`: alle 23:59:59 del giorno indicato, ora italiana, il sito smette di essere raggiungibile e mostra una pagina che rimanda ai contatti dell'agenzia. Il minisito è la brochure di un immobile in vendita: passata la finestra dell'Open Domus, lasciarlo online significa lasciare in giro un prezzo e delle foto che col tempo diventano sbagliati.

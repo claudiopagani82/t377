@@ -1,5 +1,5 @@
 {
-  "version": "1.37",
+  "version": "1.38",
   "disabled": false,
   "title": "IL METODO OPENDOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
@@ -50,7 +50,7 @@
       "enabled": true
     },
     {
-      "title": "Cos'è e come funziona l'Open Domus",
+      "title": "🤝 8. Il Metodo Open Domus®",
       "href": "/open-domus",
       "enabled": true
     },
@@ -280,7 +280,7 @@
   },
   "openDomus": {
     "enabled": true,
-    "heading": "COS'È E COME FUNZIONA L'OPEN DOMUS",
+    "heading": "IL METODO OPEN DOMUS®",
     "images": [],
     "sectionNumber": "8.",
     "videoUrl": ""
@@ -340,7 +340,7 @@
   "planimetrieCatasto": {
     "enabled": true,
     "sectionNumber": "3.",
-    "sectionTitle": "PLANIMETRIE E DATI CATASTALI",
+    "sectionTitle": "GLI SPAZI",
     "items": [
       {
         "label": "Planimetrie quotate",
