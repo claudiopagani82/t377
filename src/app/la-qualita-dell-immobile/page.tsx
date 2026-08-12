@@ -16,11 +16,15 @@ const car = property.caratteristichePrincipali
 // un'etichetta seguita dal nulla.
 const voci = (p.voci as Voce[]).filter((v) => v.text.trim())
 
+// Nel modello l'elenco è vuoto — si riempie leggendo l'annuncio del singolo
+// immobile — e da un array vuoto TypeScript dedurrebbe `never[]`.
+const caratteristiche = car.features as Voce[]
+
 // I due blocchi restano governati da interruttori distinti, come le due metà di
 // "Scopri la Casa": si può pubblicare la qualità e tenere spente le
 // caratteristiche, o viceversa. Nel pannello sono due sezioni separate.
 const mostraQualita = p.enabled && voci.length > 0
-const mostraCaratteristiche = car.enabled
+const mostraCaratteristiche = car.enabled && caratteristiche.length > 0
 
 function Card({ children }: { children: React.ReactNode }) {
   return (
@@ -47,36 +51,17 @@ export default function QualitaImmobilePage() {
           </Card>
         )}
 
-        {mostraQualita && (
-          <Card>
-            <h1 className="text-[#CC1414] font-bold text-xl uppercase tracking-wide">
-              {p.sectionNumber && <span className="mr-1">{p.sectionNumber}</span>}
-              {p.sectionTitle}
-            </h1>
-
-            <dl className="space-y-4">
-              {voci.map((v) => (
-                <div key={v.label} className="border-b border-[#f0f0f0] pb-4 last:border-0 last:pb-0">
-                  <dt className="text-[#CC1414] font-bold text-sm uppercase tracking-wide mb-1">
-                    {v.label}
-                  </dt>
-                  <dd className="text-[#333333] text-sm leading-relaxed">{v.text}</dd>
-                </div>
-              ))}
-            </dl>
-          </Card>
-        )}
-
         {mostraCaratteristiche && (
           <Card>
-            <h2 className="text-[#CC1414] font-bold text-xl uppercase tracking-wide">
+            <h1 className="text-[#CC1414] font-bold text-xl uppercase tracking-wide">
+              {car.sectionNumber && <span className="mr-1">{car.sectionNumber}</span>}
               {car.sectionTitle}
-            </h2>
+            </h1>
 
             <ul className="space-y-3">
-              {car.features.map((feature, index) => (
+              {caratteristiche.map((feature, index) => (
                 <VoceElenco key={index}>
-                  {'label' in feature && feature.label ? (
+                  {feature.label ? (
                     <><strong>{feature.label}:</strong> {feature.text}</>
                   ) : (
                     feature.text
@@ -97,6 +82,26 @@ export default function QualitaImmobilePage() {
                 </ul>
               </div>
             )}
+          </Card>
+        )}
+
+        {mostraQualita && (
+          <Card>
+            <h2 className="text-[#CC1414] font-bold text-xl uppercase tracking-wide">
+              {p.sectionNumber && <span className="mr-1">{p.sectionNumber}</span>}
+              {p.sectionTitle}
+            </h2>
+
+            <dl className="space-y-4">
+              {voci.map((v) => (
+                <div key={v.label} className="border-b border-[#f0f0f0] pb-4 last:border-0 last:pb-0">
+                  <dt className="text-[#CC1414] font-bold text-sm uppercase tracking-wide mb-1">
+                    {v.label}
+                  </dt>
+                  <dd className="text-[#333333] text-sm leading-relaxed">{v.text}</dd>
+                </div>
+              ))}
+            </dl>
           </Card>
         )}
       </div>

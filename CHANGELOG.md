@@ -4,6 +4,26 @@ Registro delle modifiche a questo template, una voce per ogni valore del campo `
 
 Il changelog parte da questa versione in avanti: le versioni precedenti non sono documentate qui.
 
+## [1.40] - 2026-08-12
+### Modificato
+- **La pagina 2 comincia dalle "Caratteristiche principali".** Le dieci voci della "Qualità dell'immobile" — anno di costruzione, serramenti, impianti — passano sotto. Chi apre la pagina cerca prima cosa è l'immobile: metri quadri, stanze, prezzo; la qualità costruttiva è la risposta alla domanda dopo. Il numero della sezione ("2.") segue il blocco che ora viene per primo.
+- La voce di menu 1 e il titolo della sua pagina diventano **"Dove si trova"** al posto di "Scopri la Casa": la pagina contiene la mappa dei dintorni e quella dei parcheggi, e il nome ora lo dice.
+
+### Aggiunto
+- **"Clicca sul menu di navigazione →" nella barra bianca in cima**, in rosso a destra, accanto al pulsante del menu. Compare su **tutte le pagine**: la barra è l'unico modo di spostarsi dentro il sito, e tre trattini fermi in un angolo non dicono da soli che lì c'è un menu. Sostituisce l'indicazione tolta dalla home nella 1.39, che stava sopra la foto e su alcune larghezze finiva addosso al pulsante.
+- La scritta e la freccia stanno **accanto** al pulsante, nel flusso della barra, non sovrapposte: su schermi stretti si accorcia il testo, mentre il pulsante resta dov'è e della stessa dimensione.
+
+### Nota
+- I siti già creati ricevono entrambi i cambiamenti con il pulsante "Aggiorna" del pannello, che riconosce i nomi e i numeri precedenti e li sostituisce **solo se non sono stati modificati a mano**.
+
+## [1.39] - 2026-08-12
+### Rimosso
+- **Logo DomusTua orizzontale nella barra in cima.** Il logo compare già, grande, dentro la home: ripeterlo nella barra toglieva spazio senza aggiungere nulla. La barra resta alta uguale, con il solo pulsante del menu allineato a destra.
+- **Scritta "Clicca sul menù di navigazione" con la freccia rossa** nella home, sia nella versione telefono sia in quella desktop.
+
+### Modificato
+- **"SCOPRI ORA" apre il menu di navigazione** invece di portare alla pagina Introduzione. Sostituisce l'indicazione appena rimossa: chi arriva sulla home vede subito da dove si entra nelle sezioni, senza doverlo spiegare a parole.
+
 ## [1.38] - 2026-08-10
 ### Corretto
 - **I titoli rinominati nel modello non arrivavano ai siti già creati.** L'aggiornamento aggiunge le chiavi mancanti ma non tocca i valori esistenti — apposta, perché titoli e voci di menu si possono personalizzare — e così un sito aggiornato alla 1.37 mostrava ancora "Cos'è e come funziona l'Open Domus" al posto di "🤝 8. Il Metodo Open Domus®", e "Planimetrie e dati catastali" al posto di "Gli Spazi".

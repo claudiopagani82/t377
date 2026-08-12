@@ -1,5 +1,5 @@
 {
-  "version": "1.38",
+  "version": "1.40",
   "disabled": false,
   "title": "IL METODO OPENDOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
@@ -15,7 +15,7 @@
       "enabled": true
     },
     {
-      "title": "🏡 1. Scopri la Casa",
+      "title": "🏡 1. Dove si trova",
       "href": "/scopri-la-casa",
       "enabled": true
     },
@@ -113,11 +113,11 @@
   "scopriLaCasa": {
     "enabled": true,
     "sectionNumber": "1.",
-    "sectionTitle": "SCOPRI LA CASA"
+    "sectionTitle": "DOVE SI TROVA"
   },
   "qualitaImmobile": {
     "enabled": true,
-    "sectionNumber": "2.",
+    "sectionNumber": "",
     "sectionTitle": "LA QUALITÀ DELL'IMMOBILE",
     "sourceDocument": "docs/descrizione-immobile.pdf",
     "generatedAt": "2026-08-09T22:18:15.614Z",
@@ -287,7 +287,7 @@
   },
   "caratteristichePrincipali": {
     "enabled": true,
-    "sectionNumber": "",
+    "sectionNumber": "2.",
     "sectionTitle": "CARATTERISTICHE PRINCIPALI",
     "features": [
       {
