@@ -66,6 +66,12 @@ export default function ScopriLaCasaPage() {
   const mostraParcheggio = parcheggio.enabled
   const mostraDintorni = dintorni.enabled
 
+  // La frase di benvenuto la compila il pannello leggendo l'annuncio
+  // ufficiale — tipologia dell'immobile e indirizzo — e resta modificabile a
+  // mano. Se è vuota non compare: meglio nessuna frase che una a metà.
+  const intro = p.intro
+  const mostraIntro = intro.enabled && intro.text.trim().length > 0
+
   return (
     <PhotoLayout>
       <div className="w-full space-y-6">
@@ -73,6 +79,12 @@ export default function ScopriLaCasaPage() {
           {p.sectionNumber && <span className="mr-1">{p.sectionNumber}</span>}
           {p.sectionTitle}
         </h1>
+
+        {mostraIntro && (
+          <Card>
+            <p className="text-center text-[#333333] text-sm leading-relaxed">{intro.text}</p>
+          </Card>
+        )}
 
         {!mostraParcheggio && !mostraDintorni && (
           <Card>

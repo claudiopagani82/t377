@@ -1,5 +1,5 @@
 {
-  "version": "1.40",
+  "version": "1.41",
   "disabled": false,
   "title": "IL METODO OPEN DOMUS",
   "subtitle": "Un modo diverso di acquistare casa",
@@ -113,7 +113,11 @@
   "scopriLaCasa": {
     "enabled": true,
     "sectionNumber": "1.",
-    "sectionTitle": "DOVE SI TROVA"
+    "sectionTitle": "DOVE SI TROVA",
+    "intro": {
+      "enabled": true,
+      "text": ""
+    }
   },
   "qualitaImmobile": {
     "enabled": true,
@@ -953,5 +957,6 @@
       }
     ]
   },
-  "expiresAt": "2026-08-17T23:59:59+02:00"
+  "expiresAt": "2026-08-17T23:59:59+02:00",
+  "fotoPrincipale": "/images/foto-principale.jpg"
 }

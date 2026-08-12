@@ -3,18 +3,25 @@ import { DomusTuaLogo } from '@/components/DomusTuaLogo'
 import { ScopriOraButton } from '@/components/ScopriOraButton'
 import property from '@/config/property.json'
 
+// Copiata nel sito dalla copertina dell'annuncio ufficiale quando il sito
+// viene creato. Se manca, la home resta sul fondo chiaro invece di mostrare
+// il riquadro vuoto di un'immagine che non c'è.
+const SFONDO = property.fotoPrincipale
+
 export default function BenvenutoPage() {
   return (
-    <div className="relative h-[calc(100vh-3rem)] flex items-center justify-center overflow-hidden">
+    <div className="relative h-[calc(100vh-3rem)] flex items-center justify-center overflow-hidden bg-[#f4f4f5]">
       {/* Background property photo */}
-      <Image
-        src="/images/foto-principale.jpg"
-        alt=""
-        fill
-        className="object-cover object-center"
-        priority
-        aria-hidden="true"
-      />
+      {SFONDO && (
+        <Image
+          src={SFONDO}
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+          aria-hidden="true"
+        />
+      )}
       <div className="absolute inset-0 bg-white/15" aria-hidden="true" />
 
       {/* Phone mockup — mobile only: unchanged original design */}
@@ -24,13 +31,15 @@ export default function BenvenutoPage() {
           {/* Screen content (visible through iPhone frame) */}
           <div className="absolute inset-0 rounded-[2.5rem] overflow-hidden flex flex-col items-center justify-center px-8 py-10">
             {/* Property photo inside screen */}
-            <Image
-              src="/images/foto-principale.jpg"
-              alt=""
-              fill
-              className="object-cover object-center"
-              aria-hidden="true"
-            />
+            {SFONDO && (
+              <Image
+                src={SFONDO}
+                alt=""
+                fill
+                className="object-cover object-center"
+                aria-hidden="true"
+              />
+            )}
             <div className="absolute inset-0 bg-white/60" aria-hidden="true" />
 
             {/* Content */}
